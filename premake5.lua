@@ -4,8 +4,8 @@ project "msdf-atlas-gen"
 	cppdialect "C++17"
 	staticruntime "off"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	targetdir ("%{wks.location}/bin/" .. outputdir .. "/%{prj.name}")
+	objdir ("%{wks.location}/bin-int/" .. outputdir .. "/%{prj.name}")
 
 	files
 	{
@@ -26,6 +26,8 @@ project "msdf-atlas-gen"
 		"msdfgen",
 		"artery-font-format",
 	}
+
+	disablewarnings {4244, 4267}
 
 	defines
 	{
