@@ -3,4 +3,4 @@
 	url = https://github.com/Chlumsky/artery-font-format
 [submodule "msdfgen"]
 	path = msdfgen
-	url = git@github.com:VMormoris/msdfgen.git
+	url = https://github.com/VMormoris/msdfgen.git
